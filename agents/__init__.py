@@ -111,6 +111,6 @@ class Child(object):
 
     def run(self):
         for i in xrange(self.state.shape[0]):
-            for j in xrange(self.state.shape[0]):
+            for j in xrange(self.state.shape[1]):
                 self.state[i,j] = random.randint(2)
         return self.state
